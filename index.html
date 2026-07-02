@@ -6,7 +6,7 @@
 <title>Mis XV Años · Fernanda</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --cream:#FAF1E7;
@@ -27,7 +27,7 @@
     overflow-x:hidden;
     width:100%;
   }
-  .script{font-family:'Mrs Saint Delafield', cursive; font-weight:400;}
+  .script{font-family:'Petit Formal Script', cursive; font-weight:400; letter-spacing:0.5px;}
   .sans{font-family:'Poppins', sans-serif;}
 
   section{
@@ -347,7 +347,51 @@
     font-size:clamp(18px,3.4vw,24px);
     margin-bottom:30px;
   }
-  .dress-icon{width:min(220px,55vw); margin:0 auto 26px;}
+  .dress-icon{width:min(180px,46vw); margin:0 auto 22px;}
+  .dress-desc{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:clamp(15px,2.6vw,18px);
+    max-width:480px;
+    margin:0 auto 34px;
+    line-height:1.6;
+    color:#4a3f38;
+  }
+  .dress-suggest-label{
+    letter-spacing:2px;
+    font-size:13px;
+    font-weight:500;
+    color:#8a7a70;
+    margin-bottom:18px;
+  }
+  .dress-cols{
+    display:flex;
+    justify-content:center;
+    gap:clamp(24px,6vw,64px);
+    flex-wrap:wrap;
+    max-width:560px;
+    margin:0 auto 30px;
+    text-align:left;
+  }
+  .dress-col{flex:1; min-width:180px;}
+  .dress-col h4{
+    font-family:'Poppins',sans-serif;
+    letter-spacing:2px;
+    font-size:14px;
+    font-weight:600;
+    color:#1c1712;
+    margin-bottom:10px;
+    text-align:center;
+  }
+  .dress-col ul{
+    font-family:'Poppins',sans-serif;
+    font-size:14px;
+    line-height:1.9;
+    color:#3a322c;
+    list-style:none;
+    padding:0;
+    text-align:center;
+  }
   .dress-note{
     font-family:'Poppins',sans-serif;
     letter-spacing:1px;
@@ -356,6 +400,83 @@
     margin:0 auto;
     line-height:1.6;
   }
+
+  /* ---------- RESORT CHIC GUIDE ---------- */
+  .rc-subtitle{
+    font-family:'Poppins',sans-serif;
+    letter-spacing:2px;
+    font-size:12px;
+    font-weight:500;
+    color:#8a7a70;
+    margin:-14px 0 34px;
+  }
+  .rc-cols{
+    display:flex;
+    justify-content:center;
+    gap:clamp(20px,5vw,56px);
+    flex-wrap:wrap;
+    max-width:620px;
+    margin:0 auto 30px;
+  }
+  .rc-col{flex:1; min-width:200px; max-width:260px;}
+  .rc-label{
+    display:inline-block;
+    font-family:'Poppins',sans-serif;
+    letter-spacing:2px;
+    font-weight:600;
+    font-size:13px;
+    padding:7px 22px;
+    border-radius:20px;
+    margin-bottom:18px;
+  }
+  .rc-label.dama{background:#e7c3ca; color:#5c2430;}
+  .rc-label.caballero{background:#aebbcd; color:#20293a;}
+  .rc-col-icon{width:78px; margin:0 auto 16px;}
+  .rc-col ul{
+    list-style:none;
+    padding:0;
+    text-align:left;
+    font-family:'Poppins',sans-serif;
+    font-size:13.5px;
+    line-height:1.85;
+    color:#3a322c;
+  }
+  .rc-col ul li{padding-left:16px; position:relative;}
+  .rc-col ul li::before{
+    content:"";
+    position:absolute;
+    left:0; top:9px;
+    width:5px; height:5px;
+    border-radius:50%;
+    background:#b98d95;
+  }
+  .rc-palette{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin:8px 0 36px;
+  }
+  .rc-palette span{
+    width:26px; height:26px;
+    border-radius:50%;
+    display:inline-block;
+    border:1px solid rgba(0,0,0,0.08);
+    box-shadow:0 2px 5px rgba(0,0,0,0.08);
+  }
+
+  /* ---------- FLAT LAY ILLUSTRATIONS ---------- */
+  .rc-flatlay{
+    background:linear-gradient(180deg,#f3ebe0,#e9ddcb);
+    border-radius:18px;
+    padding:26px 10px 16px;
+    margin-bottom:16px;
+    box-shadow:inset 0 0 0 1px rgba(0,0,0,0.05);
+  }
+  .rc-flatlay svg{
+    filter:drop-shadow(0 8px 10px rgba(60,45,30,0.18));
+  }
+  .rc-col-icon{width:150px; margin:0 auto;}
 
   /* ---------- GIFT ---------- */
   .gift-section{padding:70px 24px 90px; background:var(--cream-soft);}
@@ -528,28 +649,10 @@
 <section class="dress-section">
   <div class="reveal">
   <p class="script">Código de vestimenta</p>
-  <p class="dress-sub sans">FORMAL</p>
-  <div class="dress-icon">
-    <svg viewBox="0 0 240 190" fill="none" stroke="#1c1712" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round">
-      <!-- SUIT: collar + lapels -->
-      <path d="M40 30 L58 16 L74 34 L82 24 L90 34 L98 24 L106 34 L122 16 L140 30 L134 52 L120 44 L112 178 L68 178 L60 44 L46 52 Z"/>
-      <!-- lapel notch lines -->
-      <path d="M74 34 L82 60 L90 34" stroke-width="2.6"/>
-      <path d="M106 34 L98 60 L90 34" stroke-width="2.6"/>
-      <!-- tie -->
-      <path d="M85 40 L90 34 L95 40 L92 56 L98 96 L90 108 L82 96 L88 56 Z" fill="#1c1712" stroke="none"/>
-      <!-- buttons -->
-      <circle cx="90" cy="128" r="2.4" fill="#1c1712" stroke="none"/>
-      <circle cx="90" cy="146" r="2.4" fill="#1c1712" stroke="none"/>
+  <p class="dress-sub sans">RESORT CHIC</p>
+  <p class="dress-desc">"Resort chic" es ese equilibrio entre elegante y relajado: telas frescas y ligeras, colores claros y un look cuidado, ideal para disfrutar de la alberca y la fiesta al aire libre.</p>
 
-      <!-- DRESS -->
-      <path d="M172 22 C166 22 161 27 161 34 C161 40 165 44 165 50 L150 178 L206 178 L191 50 C191 44 195 40 195 34 C195 27 190 22 184 22 Z"/>
-      <path d="M172 22 C172 30 176 34 178 22" stroke-width="2.4"/>
-      <path d="M165 50 L191 50" stroke-width="2.4"/>
-      <path d="M158 100 L198 100 M154 140 L202 140" stroke-width="1.6" opacity="0.55"/>
-    </svg>
-  </div>
-  <p class="dress-note">SE RESERVA CUALQUIER TONO ROSA PARA LA QUINCEAÑERA</p>
+  <p class="dress-note">Agradecemos evitar prendas en tonos rosa, ya que ese color estará reservado para la quinceañera.</p>
   </div>
 </section>
 
